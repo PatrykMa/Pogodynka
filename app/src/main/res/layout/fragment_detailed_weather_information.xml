@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        app:cardElevation="4dp" android:layout_margin="0dp">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp" android:layout_margin="0dp" android:orientation="vertical">
+
+        <TextView
+                android:text="Ożarowice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView_name"/>
+        <TextView
+                android:text="Niedziela: 20:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView_time"/>
+        <TextView
+                android:text="Pogodnie z przelotnymi opadamai gradu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView_description"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:gravity="left|right" android:layout_weight="1">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_weight="3">
+                <ImageView
+                        android:src="@drawable/cloudy1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" android:id="@+id/imageView" android:layout_weight="0"
+                        android:scaleType="fitStart"/>
+                <TextView
+                        android:text="20'C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView_temperature"
+                        android:layout_weight="1" android:textSize="24sp" android:layout_marginLeft="8dp"
+                        android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_weight="3" android:gravity="center">
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/TextView_cloudy"
+                        android:text="zachmurzenie: 20%"/>
+                <TextView
+                        android:text="Wilogotnośc 30%"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView_hum"/>
+                <TextView
+                        android:text="Zachodni, 30KM/H"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView_wind"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

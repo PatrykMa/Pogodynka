@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".view.WeatherView.WeatherInfoFragment" android:id="@+id/frameLayout" android:orientation="vertical">
+
+
+    <com.example.patryk.materialdesign.view.WeatherView.OneMeassureFlipper android:layout_width="match_parent"
+                                                                           android:layout_height="wrap_content" android:id="@+id/viewFlipper_detalFliper" android:padding="0dp">
+        <com.example.patryk.materialdesign.view.WeatherView.MyView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/myView_detal"
+                android:layout_margin="4dp"/>
+        <com.example.patryk.materialdesign.view.WeatherView.MyView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/myView_detal2"
+                android:layout_margin="4dp"/>
+    </com.example.patryk.materialdesign.view.WeatherView.OneMeassureFlipper>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerView_info"
+            android:layout_margin="4dp">
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

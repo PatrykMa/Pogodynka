@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_weather"
+                android:icon="@android:drawable/ic_menu_mapmode"
+                android:title="Pogoda"/>
+        <item
+                android:id="@+id/nav_gps"
+                android:icon="@android:drawable/ic_menu_mylocation"
+                android:title="Narzędzia"/>
+        <item
+                android:id="@+id/nav_city"
+                android:icon="@android:drawable/ic_dialog_map"
+                android:title="Miasta"/>
+
+    </group>
+
+
+</menu>

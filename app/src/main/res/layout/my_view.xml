@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:theme="@style/AppTheme">
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_margin="4dp">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:gravity="left">
+
+            <TextView
+                    android:text="Ożarowice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView_name" android:textSize="24sp"
+                    android:textStyle="bold"/>
+            <TextView
+                    android:text="Niedziela: 20:00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView_time" android:textSize="18sp"/>
+            <TextView
+                    android:text="Pogodnie z przelotnymi opadamai gradu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView_description"
+                    android:textSize="18sp"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:gravity="bottom|left|right" android:layout_weight="1">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="3">
+                    <ImageView
+                            android:src="@drawable/cloudy1"
+                            android:layout_width="128px"
+                            android:layout_height="128px" android:id="@+id/imageView_icco" android:layout_weight="0"
+                            android:scaleType="fitStart"/>
+                    <TextView
+                            android:text="20'C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView_temperature"
+                            android:layout_weight="1" android:textSize="24sp" android:layout_marginLeft="8dp"
+                            android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="3" android:gravity="center">
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/TextView_cloudy"
+                            android:text="zachmurzenie: 20%" android:textSize="18sp"/>
+                    <TextView
+                            android:text="Wilogotnośc 30%"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView_hum"
+                            android:textSize="18sp"/>
+                    <TextView
+                            android:text="Zachodni, 30KM/H"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView_wind"
+                            android:textSize="18sp"/>
+                </LinearLayout>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true" app:srcCompat="@android:drawable/arrow_down_float"
+                        android:id="@+id/floatingActionButton" app:backgroundTint="@android:color/transparent"
+                        android:tint="@color/colorAccent" app:elevation="0dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/horizontal_container">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/linearLayout_hourData">
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

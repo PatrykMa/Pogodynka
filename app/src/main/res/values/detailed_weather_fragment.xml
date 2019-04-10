@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="detailedWeatherInfo_humidity">Wilgotność: %s%</string>
+    <string name="detailedWeatherInfo_temperature">%s \u2103</string>
+    <string name="detailedWeatherInfo_cityName">%s</string>
+    <string name="detailedWeatherInfo_time">%s</string>
+    <string name="detailedWeatherInfo_description">%s</string>
+    <string name="detailedWeatherInfo_cloudy">Zachmurzenie: %s</string>
+    <string name="detailedWeatherInfo_wind">Prędkośc wiatru: %s</string>
+</resources>

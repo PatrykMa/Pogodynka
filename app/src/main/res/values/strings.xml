@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MaterialDesign</string>
+
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="gpasOnOf">Moja lokalizacja</string>
+    <string name="myCity">Moje miasto</string>
+    <string name="typeYourCity">Wpisz swoje miasto</string>
+    <string name="addCityyButton">Dodaj Miasto</string>
+    <string name="typeCityNameText">Nazwa miasta</string>
+
+
+</resources>
