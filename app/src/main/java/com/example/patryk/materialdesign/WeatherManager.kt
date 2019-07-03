@@ -1,10 +1,19 @@
 package com.example.patryk.materialdesign
 
 import android.content.Context
+import org.jetbrains.anko.doAsync
+import org.jetbrains.anko.uiThread
 
 
 class WeatherManager(var context: Context) {
     val weatherApi:WeatherAPIInterface = WeatherAPIManager()
+
+    fun getDayWeather(cityName:String):Array<DayWeather>
+    {
+            return weatherApi.getFutureWeatherByCity(cityName)
+
+
+    }
 
     var obserwableCities:Array<WeatherInfo>
         get(){

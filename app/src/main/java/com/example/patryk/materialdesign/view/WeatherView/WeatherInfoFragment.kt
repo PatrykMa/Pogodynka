@@ -58,6 +58,14 @@ class WeatherInfoFragment : Fragment(),
     private fun setMainCity(weather:WeatherInfo)
     {
         mainCity = arrayOf(DayWeather().apply { day=weather })
+        WeatherManager(context!!).let {
+            doAsync {
+                val mainCity = it.getDayWeather(weather.cityName)
+                uiThread {
+                    this@WeatherInfoFragment.mainCity = mainCity
+                }
+            }
+        }
         //toDo update data
     }
 
