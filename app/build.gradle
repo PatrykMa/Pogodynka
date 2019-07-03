@@ -24,10 +24,10 @@ android {
 
 dependencies {
 
-    def room_version = "1.1.1"
+    def room_version = "2.1.0-alpha06"
 
-   // implementation "androix.room:room-runtime:$room_version"
-    //kapt "androix.room:room-compiler:$room_version" // use kapt for Kotlin
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androix.room:room-compiler:$room_version" // use kapt for Kotlin
     implementation 'org.jetbrains.anko:anko-common:0.9'
     implementation 'com.google.android.material:material:1.1.0-alpha05'
 
